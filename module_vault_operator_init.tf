@@ -6,5 +6,6 @@ module "vault_operator_init" {
 }
 
 output "vault_client_token" {
-  value = module.vault_operator_init.stdout
+  value     = module.vault_operator_init.stdout
+  sensitive = true
 }
